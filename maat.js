@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 
@@ -76,9 +77,4 @@ const App = () => {
     </div>
   )
 }
-ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+ReactDOM.render(<App />, document.getElementById('root'))
